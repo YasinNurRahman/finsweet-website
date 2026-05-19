@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+:root {
+	--primary-font: "Roboto", sans-serif;
+	--main-color: #333333;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: var(--primary-font);
+	color: var(--main-color);
+	line-height: 1.5;
+}
