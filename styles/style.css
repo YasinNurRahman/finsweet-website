@@ -1,33 +1,84 @@
+/* RESET */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 img,
 picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 :root {
-	--primary-font: "Roboto", sans-serif;
-	--main-color: #333333;
+  --primary-font: "Poppins", sans-serif;
+  --main-color: #1c1e53;
+  --accent-color: #fcd980;
+  --tertiary-color: #2405f2;
+  --heading-color: #282938;
+  --navlink-color: #bbbbcb;
+  --btn-border-color: rgba(244, 246, 252, 0.2);
 }
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-	font-family: var(--primary-font);
-	color: var(--main-color);
-	line-height: 1.5;
+  font-family: var(--primary-font);
+  color: var(--main-color);
+  line-height: 1.5;
+}
+
+/***** NAVBAR *****/
+nav {
+  background-color: var(--main-color);
+  height: 9.2rem;
+}
+.container {
+  max-width: 128rem;
+  width: 100%;
+}
+.navbar * {
+  color: var(--navlink-color);
+}
+.navbar-brand > img {
+  width: 12.2rem;
+  height: 2.8rem;
+}
+.navbar-nav {
+  gap: 3.2rem;
+}
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.nav-item:last-child .nav-link {
+  margin-right: 4.8rem;
+}
+.nav-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 4.1rem;
+  padding: 1.6rem 4.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.hero-section {
+  background-color: var(--main-color);
+  height: 66.8rem;
+  color: wheat;
 }
