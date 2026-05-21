@@ -86,6 +86,9 @@ header .container {
 .nav-item:last-child .nav-link {
   margin-right: 4.8rem;
 }
+.nav-item:not(:first-child) .nav-link:hover {
+  color: #fff;
+}
 .nav-btn {
   background-color: transparent;
   color: #fff;
