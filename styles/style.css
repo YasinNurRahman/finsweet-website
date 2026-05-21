@@ -48,9 +48,9 @@ body {
 nav {
   background-color: var(--main-color);
 }
-#cus-nav {
+/* #cus-nav {
   width: 100vw !important;
-}
+} */
 header .container {
   max-width: 128rem;
   width: 100%;
