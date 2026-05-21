@@ -1,4 +1,4 @@
-/* RESET */
+/***** RESET *****/
 *,
 *::before,
 *::after {
@@ -20,15 +20,6 @@ svg {
   display: block;
   max-width: 100%;
 }
-:root {
-  --primary-font: "Poppins", sans-serif;
-  --main-color: #1c1e53;
-  --accent-color: #fcd980;
-  --tertiary-color: #2405f2;
-  --heading-color: #282938;
-  --navlink-color: #bbbbcb;
-  --btn-border-color: rgba(244, 246, 252, 0.2);
-}
 html {
   font-size: 62.5%;
 }
@@ -38,14 +29,29 @@ body {
   line-height: 1.5;
 }
 
+/***** REUSEABLE *****/
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --main-color: #1c1e53;
+  --accent-color: #fcd980;
+  --tertiary-color: #2405f2;
+  --heading-color: #282938;
+  --navlink-color: #bbbbcb;
+  --btn-border-color: rgba(244, 246, 252, 0.2);
+  --btn-text-clr: #1b1c2b;
+}
+
 /***** NAVBAR *****/
 nav {
   background-color: var(--main-color);
-  height: 9.2rem;
 }
 .container {
   max-width: 128rem;
   width: 100%;
+  padding: 0;
+}
+.navbar {
+  padding: 1.6rem 0;
 }
 .navbar * {
   color: var(--navlink-color);
@@ -60,9 +66,11 @@ nav {
 .navbar-nav .nav-link.active {
   color: #fff;
 }
-.nav-link {
+.navbar-expand-lg .navbar-nav .nav-link:link,
+.navbar-expand-lg .navbar-nav .nav-link:active {
   font-size: 1.6rem;
   font-weight: 500;
+  padding: 0;
 }
 .nav-item:last-child .nav-link {
   margin-right: 4.8rem;
@@ -75,10 +83,80 @@ nav {
   padding: 1.6rem 4.8rem;
   font-size: 1.6rem;
   font-weight: 500;
+  transition: all 0.3s;
+}
+.nav-btn:hover {
+  border: 2px solid #fff;
 }
 
+/***** HERO SECTION *****/
 .hero-section {
   background-color: var(--main-color);
-  height: 66.8rem;
-  color: wheat;
+  width: 100vw;
+  /* height: 66.8rem; */
+  padding-top: 12.5rem;
+  padding-bottom: 12.8rem;
 }
+.hero-section .container {
+  height: 100%;
+}
+.hero-section .row {
+  height: 100%;
+  align-items: center;
+  gap: 6rem;
+  margin: 0;
+  justify-content: space-around;
+}
+.hero-section .col-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.hero-section .col-6:first-child {
+  width: 45%;
+}
+.hero-text h1 {
+  font-size: 5.4rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 7.4rem;
+  margin-bottom: 2.4rem;
+}
+.hero-text p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  opacity: 0.7;
+  line-height: 2.8rem;
+  margin-bottom: 4.8rem;
+}
+.hero-text button {
+  background-color: transparent;
+  border: none;
+}
+.hero-text button:first-child {
+  background-color: var(--accent-color);
+  color: var(--btn-text-clr);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 4.1rem;
+  font-family: "Manrope", sans-serif;
+  padding: 1.6rem 5.6rem;
+  line-height: 3.2rem;
+  transition: all 0.3s;
+}
+.hero-text button:first-child:hover {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: inset 0 0 0 3px var(--accent-color);
+}
+.hero-text button:last-child {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+.hero-section .hero-img {
+  width: 49.9%;
+}
+
+/* box-shadow: inset 0 0 0 3px #fff; */
