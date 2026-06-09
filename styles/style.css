@@ -474,6 +474,73 @@ header .container {
   margin-bottom: 4.8rem;
 }
 
+/* TESTIMONIAL */
+.testimonials {
+  background-color: #f9fafd;
+  padding: 12.8rem 0 13rem;
+}
+.testimonials .row {
+  justify-content: space-between;
+}
+.testimonials .col-4 {
+  width: 332px;
+}
+.testimonials .col-4 h3 {
+  width: 100%;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 5.6rem;
+  color: var(--heading-color);
+  margin-bottom: 1.6rem;
+}
+.testimonials .col-4 p {
+  max-width: 327px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--heading-color);
+  opacity: 0.7;
+}
+.testimonials .col-8 h4 {
+  max-width: 843px;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  color: var(--heading-color);
+  margin-bottom: 4.8rem;
+}
+.testi-autor {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.autor-img {
+  height: 52px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.autor-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  transform: scale(1.1);
+}
+.autor-info h6 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: var(--heading-color);
+  margin-bottom: 0;
+}
+.autor-info p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: var(--heading-color);
+  margin-bottom: 0;
+}
 /*##############################################*/
 /* box-shadow: inset 0 0 0 3px #fff; */
 /************************/
