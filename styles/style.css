@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 /***** RESET *****/
 *,
 *::before,
@@ -540,6 +541,135 @@ header .container {
   line-height: 2.8rem;
   color: var(--heading-color);
   margin-bottom: 0;
+}
+
+/* FAQ */
+.faq {
+  margin: 12.8rem 0;
+  height: 537px;
+}
+
+/* FORM */
+.form-container {
+  width: 100%;
+  height: 691px;
+  display: flex;
+  margin-bottom: 7.7rem;
+}
+.form-img {
+  height: 100%;
+  width: 50%;
+  /* background-color: #1c534a; */
+  background-image:
+    linear-gradient(rgba(28, 30, 83, 0.5), rgba(28, 30, 83, 0.5)),
+    url("../images/form.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 9.6rem 9.6rem 0 9.6rem;
+  position: relative;
+}
+.form-img h3 {
+  font-size: 5.4rem;
+  font-weight: 600;
+  line-height: 7.4rem;
+  color: white;
+  margin-bottom: 2.4rem;
+  z-index: 2;
+}
+.form-img p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: white;
+}
+.form-body {
+  height: 100%;
+  width: 50%;
+  background-color: #1c1e53;
+  padding: 10.7rem 9.6rem 0 9.6rem;
+}
+.form-title {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.8rem;
+  margin-bottom: 1.7rem;
+}
+.form-subtitle {
+  max-width: 432px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-bottom: 4rem;
+}
+/* 1. The Wrapper Group Container */
+.input-group {
+  position: relative;
+  margin-bottom: 1.6rem;
+}
+
+/* 2. Your Figma Input Styling */
+.input-group input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  box-sizing: border-box;
+  padding: 2.2rem 3.2rem 1.4rem 3.2rem; /* Adjusted top padding to make room for floating text */
+  color: #ffffff;
+  font-size: 1.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px !important;
+  transition: border-color 0.2s ease;
+}
+
+/* 3. Style the Label to LOOK like a Placeholder initially */
+.input-group label {
+  position: absolute;
+  left: 3.2rem;
+  top: 50%;
+  transform: translateY(-50%); /* Centers it vertically inside the input box */
+  color: rgba(244, 246, 252, 0.5); /* F4F6FC text at 50% opacity */
+  font-size: 1.6rem;
+  pointer-events: none; /* Allows click events to pass right through to the input box */
+  transition: all 0.25s ease; /* Makes the slide and shrink movement smooth */
+}
+
+/* 🔥 4. The Trigger: When Input is Focused OR has text typed in it */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: 1rem; /* Slides it up toward the top edge */
+  transform: translateY(0); /* Clears out the centering reset */
+  font-size: 1rem; /* Shrinks the text font size */
+  color: rgba(255, 255, 255, 0.8); /* Brightens the text slightly when active */
+}
+
+/* ✨ Interactive Input Border Focus State */
+.input-group input:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.form-body button {
+  max-width: 432px;
+  background-color: #fcd980;
+  padding: 1.6rem 15rem;
+  border: none;
+  border-radius: 41px;
+  color: #1b1c2b;
+  font-size: 1.8rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin-top: 18px;
+  margin-bottom: 33px;
+}
+form a {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 /*##############################################*/
 /* box-shadow: inset 0 0 0 3px #fff; */
